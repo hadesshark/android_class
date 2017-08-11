@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <integer-array name="imgs">
+        <item>@drawable/p1</item>
+        <item>@drawable/p2</item>
+        <item>@drawable/p3</item>
+        <item>@drawable/p4</item>
+        <item>@drawable/p5</item>
+        <item>@drawable/p6</item>
+        <item>@drawable/p7</item>
+        <item>@drawable/p8</item>
+        <item>@drawable/p9</item>
+        <item>@drawable/p10</item>
+    </integer-array>
+
+    <string-array name="name_string">
+        <item>第一隊</item>
+        <item>第二隊</item>
+        <item>第三隊</item>
+        <item>第四隊</item>
+        <item>第五隊</item>
+        <item>第六隊</item>
+        <item>第七隊</item>
+        <item>第八隊</item>
+        <item>第九隊</item>
+        <item>第十隊</item>
+    </string-array>
+</resources>
