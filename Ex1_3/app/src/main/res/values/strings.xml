@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ex1_3</string>
+    <string name="btn_before">上一張</string>
+    <string name="btn_next">下一張</string>
+</resources>
