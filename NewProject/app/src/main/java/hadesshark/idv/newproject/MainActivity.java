@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             View view = this.inflater.inflate(R.layout.team_listview, parent, false);
+//            View view = this.inflater.inflate(R.layout.team_listview, false);
             ImageView ivlogo = (ImageView) view.findViewById(R.id.ivlogo);
             TextView tvname = (TextView)view.findViewById(R.id.tvName);
             Team team = teamList.get(position);
