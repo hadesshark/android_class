@@ -81,17 +81,40 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            // first null
+//            // first null
+//            if (convertView == null) {
+//                convertView = this.inflater.inflate(R.layout.team_listview, parent, false);
+////                View view = this.inflater.inflate(R.layout.team_listview, false);
+//            }
+//            ImageView ivlogo = (ImageView) convertView.findViewById(R.id.ivlogo);
+//            TextView tvname = (TextView) convertView.findViewById(R.id.tvName);
+//            Team team = teamList.get(position);
+//            ivlogo.setImageResource(team.getLogo());
+//            tvname.setText(team.getName());
+
+            ViewHolder holder;
             if (convertView == null) {
                 convertView = this.inflater.inflate(R.layout.team_listview, parent, false);
-//                View view = this.inflater.inflate(R.layout.team_listview, false);
+                holder = new ViewHolder();
+                holder.ivlogo = (ImageView) convertView.findViewById(R.id.ivlogo);
+                holder.tvname = (TextView) convertView.findViewById(R.id.tvName);
+                // can reuse
+                convertView.setTag(holder);
             }
-            ImageView ivlogo = (ImageView) convertView.findViewById(R.id.ivlogo);
-            TextView tvname = (TextView) convertView.findViewById(R.id.tvName);
+            else {
+                holder = (ViewHolder) convertView.getTag();
+            }
+
             Team team = teamList.get(position);
-            ivlogo.setImageResource(team.getLogo());
-            tvname.setText(team.getName());
+            holder.ivlogo.setImageResource(team.getLogo());
+            holder.tvname.setText(team.getName());
+
             return convertView;
+        }
+
+        private class ViewHolder {
+            ImageView ivlogo;
+            TextView tvname;
         }
     }
 }
