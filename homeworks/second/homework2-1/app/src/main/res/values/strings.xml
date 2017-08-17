@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">homework2-1</string>
+    <string name="wallpaper">Change Wallpaper</string>
+    <string name="background_color">Change Background Color</string>
+    <string name="wallpaper_a">Wallpaper A</string>
+    <string name="wallpaper_b">Wallpaper B</string>
+    <string name="wallpaper_c">Wallpaper C</string>
+    <string name="yellow">Yellow</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+</resources>

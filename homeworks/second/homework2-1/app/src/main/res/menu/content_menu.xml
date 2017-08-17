@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_wallpaper"
+        android:title="@string/wallpaper">
+        <menu>
+            <item
+                android:id="@+id/wallpaper_a"
+                android:title="@string/wallpaper_a">
+
+            </item>
+            <item
+                android:id="@+id/wallpaper_b"
+                android:title="@string/wallpaper_b">
+
+            </item>
+            <item
+                android:id="@+id/wallpaper_c"
+                android:title="@string/wallpaper_c"></item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_color"
+        android:title="@string/background_color">
+        <menu>
+            <item
+                android:id="@+id/yellow"
+                android:title="@string/yellow">
+
+            </item>
+            <item
+                android:id="@+id/blue"
+                android:title="@string/blue">
+
+            </item>
+            <item
+                android:id="@+id/red"
+                android:title="@string/red"></item>
+        </menu>
+    </item>
+</menu>
