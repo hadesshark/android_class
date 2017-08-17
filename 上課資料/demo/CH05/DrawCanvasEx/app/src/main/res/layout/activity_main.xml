@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <idv.david.drawcanvasex.RectBarView
+        android:id="@+id/rectBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--在android.widget套件底下的元件，不需要完整名稱-->
+
+    <Button
+        android:id="@+id/btnDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btndraw" />
+
+</RelativeLayout>
+

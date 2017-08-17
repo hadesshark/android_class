@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerCardViewEx</string>
+    <string name="no_choose">Click the item again please</string>
+</resources>

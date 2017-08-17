@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/clear"
+        android:title="@string/clear" />
+    <item
+        android:id="@+id/background"
+        android:title="@string/background">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/yellow"
+                android:title="@string/yellow" />
+            <item
+                android:id="@+id/green"
+                android:title="@string/green" />
+            <item
+                android:id="@+id/red"
+                android:title="@string/red" />
+        </group>
+    </item>
+
+    <!--
+        android:checkableBehavior以下參考
+        single → 單選 (圓形按鈕圖示)
+        all → 多選 (核取方塊圖示)
+        none → 沒有任何項目可勾選
+    -->
+
+</menu>

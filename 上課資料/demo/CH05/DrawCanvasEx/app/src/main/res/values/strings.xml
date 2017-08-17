@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DrawCanvasEx</string>
+    <string name="btndraw">畫圖</string>
+</resources>
