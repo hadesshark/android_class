@@ -1,4 +1,4 @@
-package idv.david.recyclercardviewex;
+package helloandroid.homework2_3;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,16 +15,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerVierw);
 
-        /*
-            透過LayoutManager的設定可以輕鬆變化RecyclerView的呈現
-            以下分別使用LinerLayoutManager與StaggeredGridLayoutManager示範
-         */
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         //設定每個List是否為固定尺寸
         recyclerView.setHasFixedSize(true);
@@ -33,10 +30,6 @@ public class MainActivity extends AppCompatActivity {
         //設定LayoutManager
         recyclerView.setLayoutManager(layoutManager);
 
-
-//        recyclerView.setLayoutManager(
-//                new StaggeredGridLayoutManager(
-//                        2, StaggeredGridLayoutManager.HORIZONTAL));
         final List<Team> teamList = new ArrayList<>();
         teamList.add(new Team(1, R.drawable.p1, "巴爾的摩金鶯"));
         teamList.add(new Team(2, R.drawable.p2, "芝加哥白襪"));
@@ -63,11 +56,13 @@ public class MainActivity extends AppCompatActivity {
         class ViewHolder extends RecyclerView.ViewHolder {
             private ImageView ivLogo;
             private TextView tvName;
+            private TextView tvNum;
 
             public ViewHolder(View view) {
                 super(view);
                 ivLogo = (ImageView) view.findViewById(R.id.ivLogo);
                 tvName = (TextView) view.findViewById(R.id.tvName);
+                tvNum = (TextView) view.findViewById(R.id.tvNum);
             }
         }
 
@@ -89,13 +84,25 @@ public class MainActivity extends AppCompatActivity {
             final Team team = teamList.get(position);
             holder.ivLogo.setImageResource(team.getLogo());
             holder.tvName.setText(team.getName());
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
+            holder.tvName.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(MainActivity.this, team.getName(), Toast.LENGTH_SHORT).show();
                 }
             });
+            holder.tvNum.setText(Integer.toString(team.getId()));
+            holder.tvNum.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(MainActivity.this, Integer.toString(team.getId()), Toast.LENGTH_SHORT).show();
+                }
+            });
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(MainActivity.this, Integer.toString(team.getId()) + ' ' + team.getName(), Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
-
 }
