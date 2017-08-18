@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private TranslateAnimation getTranslateAnimation() {
-        View parentView = (View) ivSoccer.getParent();
+        View parentView = (View) ivSoccer.getParent(); // Linear Layout
         // 球移動的距離
         float distance = parentView.getWidth() - parentView.getPaddingLeft() -
                 parentView.getPaddingRight() - ivSoccer.getWidth();

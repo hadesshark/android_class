@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IntentServiceEx</string>
+    <string name="text_tvMessage">Awesome!~ this activity is activated by a service!!</string>
+</resources>
