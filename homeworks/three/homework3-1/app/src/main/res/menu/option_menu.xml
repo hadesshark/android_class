@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/shape_menu"
+        android:title="形狀">
+        <menu>
+            <item android:title="@string/circle"
+                android:id="@+id/circle">
+
+            </item>
+            <item android:title="@string/square"
+                android:id="@+id/square">
+
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/color_menu"
+        android:title="顏色">
+        <menu>
+            <item android:title="@string/red"
+                android:id="@+id/red">
+
+            </item>
+            <item android:title="@string/blue"
+                android:id="@+id/blue">
+
+            </item>
+        </menu>
+    </item>
+</menu>

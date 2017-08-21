@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">homework3-1</string>
+    <string name="square">正方形</string>
+    <string name="circle">圓形</string>
+    <string name="red">紅色</string>
+    <string name="blue">藍色</string>
+</resources>
