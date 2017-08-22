@@ -16,6 +16,12 @@
 
 ## 8/18
 
+* 動畫
+* 設計 button
+* Activity (第六章)
+* Process
+* Intent
+
 
 
 ## 8/21
