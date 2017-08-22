@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Homework4-2</string>
+    <string name="btn_face_bmi">面對BMI現實</string>
+    <string name="btn_finish_exercise">結束去運動</string>
+    <string name="tv_height">身高</string>
+    <string name="tv_weight">體重</string>
+    <string name="btn_ok">確認</string>
+    <string name="btn_clear">清除</string>
+    <string name="btn_back">返回</string>
+</resources>
