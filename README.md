@@ -26,3 +26,6 @@
 
 ## 8/21
 
+* Intent Filter
+* 寫 BMI 程式
+
