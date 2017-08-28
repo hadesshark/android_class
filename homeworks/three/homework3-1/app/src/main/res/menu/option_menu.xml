@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <item
         android:id="@+id/shape_menu"
-        android:title="形狀">
+        android:title="形狀"
+        app:showAsAction="never|ifRoom">
         <menu>
-            <item android:title="@string/circle"
-                android:id="@+id/circle">
+            <item
+                android:id="@+id/circle"
+                android:title="@string/circle">
 
             </item>
-            <item android:title="@string/square"
-                android:id="@+id/square">
+            <item
+                android:id="@+id/square"
+                android:title="@string/square">
 
             </item>
         </menu>
     </item>
     <item
         android:id="@+id/color_menu"
-        android:title="顏色">
+        android:title="顏色"
+        app:showAsAction="ifRoom|never">
         <menu>
-            <item android:title="@string/red"
-                android:id="@+id/red">
+            <item
+                android:id="@+id/red"
+                android:title="@string/red">
 
             </item>
-            <item android:title="@string/blue"
-                android:id="@+id/blue">
+            <item
+                android:id="@+id/blue"
+                android:title="@string/blue">
 
             </item>
         </menu>

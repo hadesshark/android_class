@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMIFragmentEx</string>
+    <string name="tv_height">身高</string>
+    <string name="tv_weight">體重</string>
+    <string name="tv_result">BMI結果:</string>
+    <string name="btn_submit">送出</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_back">返回</string>
+    <string name="msg_empty_err">有資料未填寫, 請重新輸入</string>
+    <string name="msg_data_err">輸入資料格式有誤, 請重新輸入</string>
+</resources>

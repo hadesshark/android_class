@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">homework5-1</string>
+    <string name="tv_title">三秒後收到回覆</string>
+    <string name="tv_content">這是通知訊息內文</string>
+</resources>
