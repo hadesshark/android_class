@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerVierw);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         /*
             透過LayoutManager的設定可以輕鬆變化RecyclerView的呈現
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
             public ViewHolder(View view) {
                 super(view);
-                ivLogo = (ImageView) view.findViewById(R.id.ivLogo);
+s                ivLogo = (ImageView) view.findViewById(R.id.ivLogo);
                 tvName = (TextView) view.findViewById(R.id.tvName);
             }
         }
